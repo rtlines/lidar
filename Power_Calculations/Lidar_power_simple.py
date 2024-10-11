@@ -1,11 +1,11 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-PTX = 1.00    # Watts
+PTX = 0.25    # Watts
 GTX = 1       # Transmiter efficiency
 GRX = 1       # Reciever efficiency
-R = 1.0      # reciever radius in meters
-Lmax = 10000        # distance from lidar to reflector
+R = 0.05      # reciever radius in meters
+Lmax = 10        # distance from lidar to reflector
 
 # Detector characteristics
 Xilambda = 0.3    #A/Watt
@@ -32,7 +32,7 @@ for i in range(N):
 plt.figure()
 plt.xlabel("Range[m]")
 plt.ylabel("Signal current [mA]")
-plt.plot(x, np.log(Signal))
+#plt.plot(x, np.log(Signal))
 plt.plot(x, beta)
 #plt.plot(x,y_axis)
 plt.show()
