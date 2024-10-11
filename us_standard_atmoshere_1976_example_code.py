@@ -1,7 +1,11 @@
+###############################################################################
 import numpy as np
 import matplotlib.pyplot as plt
 import ussa1976
-
+###############################################################################
+# Based on the library found at 
+# https://ussa1976.readthedocs.io/en/latest/user_guide.html
+###############################################################################
 # Call the routine that calculates values for the US Standard Atmosphere (1976)
 #   The values come back in a data structure. If the stucture is called ds then
 #   atmospheric values come back as structure pieces in what looks like a 
